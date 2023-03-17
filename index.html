@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css" />
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <header>
+    <h1 id="title">Formulir Survei Kependudukan<br>Kabupaten Purworejo 2023</h1>
+    <p id="description">Formulir survei kependudukan Kabupaten Purworejo tahun 2023</p>
+  </header>
+  <div class="container">
+    <form id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">Nama Lengkap
+          <input type="text" id="name" placeholder="Masukkan Nama Anda" required />
+        </label>
+        <label for="email" id="email-label">Email
+          <input type="email" id="email" placeholder="Masukkan Email Anda" required />
+        </label>
+        <label for="number" id="number-label">Number
+          <input type="number" id="number" placeholder="Masukkan Umur Anda" min="1" max="99" required />
+        </label>
+      </div>
+
+      <div class="form-group">
+        <p>Jenis kelamin</p>
+        <label>
+          <input name="jenis-kelamin" value="laki-laki" type="radio" /> Laki - laki
+        </label>
+        <label>
+          <input name="jenis-kelamin" value="perempuan" type="radio" /> Perempuan
+        </label>
+      </div>
+
+      <div class="form-group">
+        <p>Kecamatan</p>
+        <select name="dropdown" id="dropdown" required>
+          <option value="" selected>- Pilih -</option>
+          <option value="grabag">Grabag</option>
+          <option value="ngombol">Ngombol</option>
+          <option value="bayan">Bayan</option>
+          <option value="butuh">Loano</option>
+          <option value="bruno">Bruno</option>
+          <option value="banyuurip">Banyuurip</option>
+          <option value="bener">Bener</option>
+          <option value="purwodadi">Purwodadi</option>
+          <option value="purworejo">Purworejo</option>
+          <option value="kutoarjo">Kutoarjo</option>
+          <option value="bagelen">Bagelen</option>
+          <option value="gebang">Gebang</option>
+          <option value="kaligesing">Kaligesing</option>
+          <option value="kemiri">Kemiri</option>
+          <option value="pituruh">Pituruh</option>
+          <option value="butuh">Butuh</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Alat Elektronik yang sering digunakan</p>
+        <label><input value="televisi" type="checkbox" /> Televisi</label>
+        <label><input value="telepon" type="checkbox" /> Telepon</label>
+        <label><input value="smartphone" type="checkbox" /> Smartphone</label>
+        <label><input value="radio" type="checkbox" /> Radio</label>
+        <label><input value="laptop" type="checkbox" /> Laptop</label>
+        <label><input value="komputer" type="checkbox" /> Komputer</label>
+      </div>
+
+      <div class="form-group">
+        <label for="detail">Bio</label>
+        <textarea id="detail" placeholder="Masukkan penjelasan singkat mengenai diri Anda"></textarea>
+      </div>
+
+      <input id="submit" type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+
+</html>
